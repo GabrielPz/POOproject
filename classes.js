@@ -9,7 +9,7 @@ export class Conta {
         this.#saldo = saldoInicial;
         this.nomeUsuario = nomeUsuario;
         this.profissaoUsuario = profissaoUsuario;
-        this.criarConta(); // Chamando o método criarConta aqui para exibir a mensagem de sucesso
+        this.criarConta();
     }
 
     criarConta() {
@@ -92,7 +92,6 @@ export class ContaCorrente extends Conta {
         this.contasCorrente.forEach(conta => console.log(conta));
     }
 
-    // Métodos adicionais podem ser implementados aqui.
 }
 
 // Classe ContaPoupanca que herda de Conta
@@ -125,6 +124,5 @@ export class ContaPoupanca extends Conta {
         console.log("Melhores investimentos: " + this.melhoresInvestimentos.join(", "));
     }
 
-    // Métodos adicionais podem ser implementados aqui.
 }
 
